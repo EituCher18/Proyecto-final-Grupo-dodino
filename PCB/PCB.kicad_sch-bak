@@ -1647,28 +1647,6 @@
 			)
 		)
 	)
-	(global_label "PWM1"
-		(shape input)
-		(at 42.926 94.742 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c04f00ab-acdd-474d-a911-32355b2324fb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 51.2935 94.742 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "GndPlaca"
 		(shape input)
 		(at 106.172 120.904 270)
@@ -1687,6 +1665,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PWM1"
+		(shape input)
+		(at 42.926 94.742 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cc41d91e-bf0c-4b40-a897-05a3a39ab3ea")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 51.2935 94.742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -1965,7 +1965,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c272913-77c7-4eb9-a760-4247350ea8d6")
-		(property "Reference" "M6"
+		(property "Reference" "M?"
 			(at 150.114 71.4485 0)
 			(effects
 				(font
@@ -2022,7 +2022,7 @@
 		(instances
 			(project "PCB"
 				(path "/ce73cf4f-b420-4ae1-b14f-64aecd900239"
-					(reference "M6")
+					(reference "M?")
 					(unit 1)
 				)
 			)
@@ -2096,7 +2096,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 70.104 119.888 0)
+		(at 59.436 119.126 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2105,7 +2105,7 @@
 		(fields_autoplaced yes)
 		(uuid "1e42d384-93be-4570-9520-74a3112b0cb0")
 		(property "Reference" "#PWR09"
-			(at 70.104 126.238 0)
+			(at 59.436 125.476 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2114,7 +2114,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 70.104 124.968 0)
+			(at 59.436 124.206 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2122,7 +2122,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 70.104 119.888 0)
+			(at 59.436 119.126 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2131,7 +2131,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 70.104 119.888 0)
+			(at 59.436 119.126 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2140,7 +2140,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 70.104 119.888 0)
+			(at 59.436 119.126 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2438,7 +2438,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "703ecde8-efc0-4b58-a189-80017767af3e")
-		(property "Reference" "U2"
+		(property "Reference" "U?"
 			(at 114.808 114.554 0)
 			(effects
 				(font
@@ -2496,7 +2496,7 @@
 		(instances
 			(project "PCB"
 				(path "/ce73cf4f-b420-4ae1-b14f-64aecd900239"
-					(reference "U2")
+					(reference "U?")
 					(unit 1)
 				)
 			)
@@ -2578,7 +2578,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82cae199-27c5-4c65-9c6b-dd7eb3a36d24")
-		(property "Reference" "U1"
+		(property "Reference" "U?"
 			(at 93.218 52.07 0)
 			(effects
 				(font
@@ -2594,7 +2594,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DOIT_ESP32:DOIT_ESP32_Devkit_mirko"
+		(property "Footprint" ""
 			(at 79.248 58.674 0)
 			(effects
 				(font
@@ -2714,7 +2714,7 @@
 		(instances
 			(project "PCB"
 				(path "/ce73cf4f-b420-4ae1-b14f-64aecd900239"
-					(reference "U1")
+					(reference "U?")
 					(unit 1)
 				)
 			)
@@ -2796,7 +2796,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2dedf3a-8983-410d-8414-98d621134447")
-		(property "Reference" "M3"
+		(property "Reference" "M?"
 			(at 34.0471 83.566 0)
 			(effects
 				(font
@@ -2851,7 +2851,7 @@
 		(instances
 			(project "PCB"
 				(path "/ce73cf4f-b420-4ae1-b14f-64aecd900239"
-					(reference "M3")
+					(reference "M?")
 					(unit 1)
 				)
 			)
@@ -2933,7 +2933,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be2ede8b-9033-4068-8c59-1b4e4bcd8cb8")
-		(property "Reference" "M2"
+		(property "Reference" "M?"
 			(at 32.5231 68.326 0)
 			(effects
 				(font
@@ -2988,7 +2988,7 @@
 		(instances
 			(project "PCB"
 				(path "/ce73cf4f-b420-4ae1-b14f-64aecd900239"
-					(reference "M2")
+					(reference "M?")
 					(unit 1)
 				)
 			)
@@ -3071,7 +3071,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c0e45c13-0e88-489c-b05a-ed1572d2c857")
-		(property "Reference" "M1"
+		(property "Reference" "M?"
 			(at 32.2691 53.34 0)
 			(effects
 				(font
@@ -3126,7 +3126,7 @@
 		(instances
 			(project "PCB"
 				(path "/ce73cf4f-b420-4ae1-b14f-64aecd900239"
-					(reference "M1")
+					(reference "M?")
 					(unit 1)
 				)
 			)
@@ -3200,7 +3200,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 71.374 114.3 0)
+		(at 59.436 114.046 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3209,7 +3209,7 @@
 		(fields_autoplaced yes)
 		(uuid "cd417063-a3ee-4a07-a816-05e2c913cdfc")
 		(property "Reference" "#PWR01"
-			(at 71.374 118.11 0)
+			(at 59.436 117.856 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3218,7 +3218,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 71.374 109.22 0)
+			(at 59.436 108.966 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3226,7 +3226,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 71.374 114.3 0)
+			(at 59.436 114.046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3235,7 +3235,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.374 114.3 0)
+			(at 59.436 114.046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3244,7 +3244,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 71.374 114.3 0)
+			(at 59.436 114.046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3340,7 +3340,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ebb45cdf-b6a9-46ab-aa8a-0a568848364e")
-		(property "Reference" "J1"
+		(property "Reference" "J?"
 			(at 51.816 107.95 0)
 			(effects
 				(font
@@ -3395,7 +3395,7 @@
 		(instances
 			(project "PCB"
 				(path "/ce73cf4f-b420-4ae1-b14f-64aecd900239"
-					(reference "J1")
+					(reference "J?")
 					(unit 1)
 				)
 			)
@@ -3411,7 +3411,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f25969a9-86dd-4d3b-846a-515def6972bd")
-		(property "Reference" "M5"
+		(property "Reference" "M?"
 			(at 148.082 56.7165 0)
 			(effects
 				(font
@@ -3468,7 +3468,7 @@
 		(instances
 			(project "PCB"
 				(path "/ce73cf4f-b420-4ae1-b14f-64aecd900239"
-					(reference "M5")
+					(reference "M?")
 					(unit 1)
 				)
 			)
@@ -3484,7 +3484,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f269e173-5777-45cd-a9cf-675acb98fc2c")
-		(property "Reference" "M4"
+		(property "Reference" "M?"
 			(at 146.05 95.0705 0)
 			(effects
 				(font
@@ -3541,7 +3541,7 @@
 		(instances
 			(project "PCB"
 				(path "/ce73cf4f-b420-4ae1-b14f-64aecd900239"
-					(reference "M4")
+					(reference "M?")
 					(unit 1)
 				)
 			)
