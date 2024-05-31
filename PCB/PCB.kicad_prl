@@ -4,14 +4,7 @@
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
-<<<<<<< HEAD
     "hidden_nets": [],
-=======
-    "hidden_nets": [
-      "PWM6",
-      "VccPlaca"
-    ],
->>>>>>> parent of bf9034c (.)
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
