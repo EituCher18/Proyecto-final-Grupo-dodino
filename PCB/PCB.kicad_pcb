@@ -3046,45 +3046,16 @@
 			)
 		)
 	)
-	(gr_line
-		(start 41.76 162.88)
-		(end 41.76 83.54)
+	(gr_rect
+		(start 42.16 88.55)
+		(end 142.12 156.25)
 		(stroke
 			(width 0.2)
 			(type default)
 		)
-		(layer "B.Cu")
-		(uuid "04fe71e4-c01b-4964-95c5-dd346c4bd5f2")
-	)
-	(gr_line
-		(start 144.97 162.88)
-		(end 41.76 162.88)
-		(stroke
-			(width 0.2)
-			(type default)
-		)
-		(layer "B.Cu")
-		(uuid "24b5b735-0310-4600-87a6-5ec0d9e44c0d")
-	)
-	(gr_line
-		(start 42.17 83.54)
-		(end 144.97 83.54)
-		(stroke
-			(width 0.2)
-			(type default)
-		)
-		(layer "B.Cu")
-		(uuid "b3b0879f-1490-42bc-8a86-c346e72d8a6a")
-	)
-	(gr_line
-		(start 144.97 83.54)
-		(end 144.97 162.88)
-		(stroke
-			(width 0.2)
-			(type default)
-		)
-		(layer "B.Cu")
-		(uuid "beaade13-993b-44bd-b137-9296630ca114")
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "46bb9170-9aa2-4ad9-87f3-610674510824")
 	)
 	(segment
 		(start 134.15 115.84)
