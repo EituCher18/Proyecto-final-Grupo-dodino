@@ -150,9 +150,11 @@
             letra = char_array_text[j];
             switch (letra) {
               case 'a':
+              bot.sendMessage(chat_id, "a");
                 servo1();
                 break;
               case 'b':
+              bot.sendMessage(chat_id, "b");
                 servo1();
                 servo2();
                 break;
@@ -164,17 +166,17 @@
                 servo1();
                 servo4();
                 servo5();
-                break:
+                break;
               case 'e':
                 servo1();
                 servo5();
-                break:
+                break;
               case 'f':
                 servo1();
                 servo2();
                 servo4();
                 break;
-              case 'g'
+              case 'g':
                 servo1();
                 servo2();
                 servo4();
@@ -184,13 +186,66 @@
                 servo1();
                 servo2();
                 servo5();
-                break:
+                break;
               case 'i':
                 servo2();
                 servo4();
                 servo5();
-                break:
+                break;
               case 'k':
+                servo1();
+                servo3();
+                break;
+              case 'l':
+                servo1();
+                servo2();
+                servo3();
+                break;
+              case 'm':
+                servo1();
+                servo3();
+                servo4();
+                break;
+              case 'n':
+                servo1();
+                servo3();
+                servo4();
+                servo5();
+                break;
+              case 'o':
+                servo1();
+                servo3();
+                servo5();
+                break;
+              case 'p':
+                servo1();
+                servo2();
+                servo3();
+                servo4();
+                break;
+              case 'q':
+                servo1();
+                servo2();
+                servo3();  
+                servo4();
+                servo5();
+                break;
+              case 'r':
+                servo1();
+                servo2();
+                servo3();
+                servo5();
+                break;
+              case 's':
+                servo2();
+                servo3();
+                servo4();
+                break;
+              case 't':
+                servo1();
+                servo3();
+                servo5();
+                break;
             }
           }
           estado = INICIO;
