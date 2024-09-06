@@ -13,10 +13,10 @@ void setup() {
   Serial.begin(9600);
  
  //Marcamos en que piines van a estar conectado los servos
-  servoMotor1.attach(19);
-  servoMotor2.attach(18);
+  servoMotor1.attach(33);
+  servoMotor2.attach(34);
 }
-
+// pines de los servos 33 25 26 32 27 23
 void loop ()
 {
 //se escribe nombre del servo.write(el valor del giro);
