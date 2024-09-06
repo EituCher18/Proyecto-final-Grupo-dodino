@@ -16,7 +16,7 @@ void setup() {
   servoMotor1.attach(33);
   servoMotor2.attach(27);
 }
-// pines de los servos 18 21 23 25 26 33
+// pines de los servos 18 21 23 25 26 33  
 void loop ()
 {
 //se escribe nombre del servo.write(el valor del giro);
