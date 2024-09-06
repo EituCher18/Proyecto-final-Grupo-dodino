@@ -1,5 +1,4 @@
 #include <WiFi.h>
-#include <WiFi.h>
 #include <WiFiClientSecure.h>
 #include <ArduinoJson.h>
 #include <UniversalTelegramBot.h>
@@ -176,7 +175,8 @@ void Task2code(void* parameter) {
               servo2();
               servo4();
               break;
-            case 'g' servo1();
+            case 'g':
+            servo1();
               servo2();
               servo4();
               servo5();
