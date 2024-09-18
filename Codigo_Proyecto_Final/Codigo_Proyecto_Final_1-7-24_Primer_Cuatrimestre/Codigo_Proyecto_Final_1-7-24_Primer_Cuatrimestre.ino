@@ -8,8 +8,8 @@ Servo ServoMotor[5];
 
 unsigned long tiempo;
 
-const char* ssid = "ORT-IoT";
-const char* password = "OrtIOT2024";
+const char* ssid = "iPhone de Ezequiel";
+const char* password = "Eze05eze07";
 
 #define BOTtoken "6887192498:AAH96GYOpwVlT3cpzu_IwoZmRzhPGEn1WH4"
 #define CHAT_ID "6861080846"
@@ -62,15 +62,7 @@ void setup() {
     ServoMotor[i].attach(15 + i);
   }
 
-  WiFi.mode(WIFI_STA);
-  WiFi.begin(ssid, password);
-  client.setCACert(TELEGRAM_CERTIFICATE_ROOT);
-  while (WiFi.status() != WL_CONNECTED) {
-    Serial.print(".");
-  }
-  Serial.println("");
-  Serial.println("WiFi conectado.");
-  bot.sendMessage(CHAT_ID, "Bot iniciado", "");
+
 
   xTaskCreatePinnedToCore(
     Task1code, /* Task function. */
@@ -100,6 +92,17 @@ void Task1code(void* pvParameters) {
   int numNewMessages;
   int lastTimeBotRan;
   int Botdelay = 1000;
+
+  WiFi.mode(WIFI_STA);
+  WiFi.begin(ssid, password);
+  client.setCACert(TELEGRAM_CERTIFICATE_ROOT);
+  while (WiFi.status() != WL_CONNECTED) {
+    Serial.print(".");
+  }
+  Serial.println("");
+  Serial.println("WiFi conectado.");
+  bot.sendMessage(CHAT_ID, "Bot iniciado", "");
+
   for (;;) {
     if (millis() > lastTimeBotRan + Botdelay) {
       numNewMessages = bot.getUpdates(bot.last_message_received + 1);
@@ -156,73 +159,100 @@ void Task2code(void* parameter) {
             case 'b':
               bot.sendMessage(chat_id, "b");
               servo1();
+              servo2();
               break;
             case 'c':
+              bot.sendMessage(chat_id, "c");
               servo1();
               servo4();
               break;
             case 'd':
+              bot.sendMessage(chat_id, "d");
               servo1();
               servo4();
               servo5();
               break;
             case 'e':
+              bot.sendMessage(chat_id, "e");
               servo1();
               servo5();
               break;
-              case 'f' :
+            case 'f':
+              bot.sendMessage(chat_id, "f");
               servo1();
               servo2();
               servo4();
               break;
             case 'g':
-            servo1();
+              bot.sendMessage(chat_id, "g");
+              servo1();
               servo2();
               servo4();
               servo5();
               break;
-              case 'h':
+            case 'h':
+              bot.sendMessage(chat_id, "h");
               servo1();
               servo2();
               servo5();
               break;
             case 'i':
+              bot.sendMessage(chat_id, "i");
+              servo2();
+              servo4();
+              break;
+            case 'j':
+              bot.sendMessage(chat_id, "j");
               servo2();
               servo4();
               servo5();
               break;
             case 'k':
+              bot.sendMessage(chat_id, "k");
               servo1();
               servo3();
               break;
             case 'l':
+              bot.sendMessage(chat_id, "l");
               servo1();
               servo2();
               servo3();
               break;
             case 'm':
+              bot.sendMessage(chat_id, "m");
               servo1();
               servo3();
               servo4();
               break;
             case 'n':
+              bot.sendMessage(chat_id, "n");
               servo1();
               servo3();
               servo4();
               servo5();
               break;
+            case 'ñ':
+              bot.sendMessage(chat_id, "ñ");
+              servo1();
+              servo3();
+              servo4();
+              servo5();
+              servo6();
             case 'o':
+              bot.sendMessage(chat_id, "o");
               servo1();
               servo3();
               servo5();
               break;
             case 'p':
+              bot.sendMessage(chat_id, "p");
               servo1();
               servo2();
               servo3();
               servo4();
               break;
             case 'q':
+              bot.sendMessage(chat_id, "q");
               servo1();
               servo2();
               servo3();
@@ -230,20 +260,59 @@ void Task2code(void* parameter) {
               servo5();
               break;
             case 'r':
+              bot.sendMessage(chat_id, "r");
               servo1();
               servo2();
               servo3();
               servo5();
               break;
             case 's':
+              bot.sendMessage(chat_id, "s");
               servo2();
               servo3();
               servo4();
               break;
-            case 't':
+            case 'u':
+              bot.sendMessage(chat_id, "u");
+              servo1();
+              servo3();
+              servo6();
+              break;
+            case 'v':
+              bot.sendMessage(chat_id, "v");
+              servo1();
+              servo2();
+              servo3();
+              servo6();
+              break;
+            case 'w':
+              bot.sendMessage(chat_id, "w");
+              servo2();
+              servo4();
+              servo5();
+              servo6();
+              break;
+            case 'x':
+              bot.sendMessage(chat_id, "x");
+              servo1();
+              servo3();
+              servo4();
+              servo6();
+              break;
+            case 'y':
+              bot.sendMessage(chat_id, "y");
+              servo1();
+              servo3();
+              servo4();
+              servo5();
+              servo6();
+              break;
+            case 'z':
+              bot.sendMessage(chat_id, "z");
               servo1();
               servo3();
               servo5();
+              servo6();
               break;
           }
         }
